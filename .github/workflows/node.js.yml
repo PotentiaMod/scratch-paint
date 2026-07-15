@@ -18,4 +18,4 @@ jobs:
         with:
           token: ${{ secrets.t }}
           event-type: update
-          repository: PenguinMod/penguinmod.github.io
+          repository: PotentiaMod/scratch-gui
