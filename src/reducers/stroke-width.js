@@ -3,7 +3,7 @@ import {CHANGE_SELECTED_ITEMS} from './selected-items';
 import {getColorsFromSelection} from '../helper/style-path';
 
 const CHANGE_STROKE_WIDTH = 'scratch-paint/stroke-width/CHANGE_STROKE_WIDTH';
-const MAX_STROKE_WIDTH = 99999; // NOTE: in pm we can just expect the user to use this properly despite https://github.com/scratchfoundation/scratch-paint/issues/768
+const MAX_STROKE_WIDTH = 999999; // NOTE: in pm we can just expect the user to use this properly despite https://github.com/scratchfoundation/scratch-paint/issues/768
 const initialState = 4;
 
 const reducer = function (state, action) {
