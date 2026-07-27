@@ -1,5 +1,5 @@
 .base {
-    background-color: hsla(194, 100%, 50%, 0.5);
+    background-color: var(--paint-looks-secondary-default, #FF8C1A);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -25,7 +25,7 @@
 .header {
     width: 100%;
     height: 3.125em;
-    background-color: hsla(194, 100%, 50%, 1);
+    background-color: var(--paint-looks-secondary-default, #FF8C1A);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +57,7 @@
 }
 
 .accept {
-    background-color: hsla(194, 100%, 50%, 1);
+    background-color: var(--paint-looks-secondary-default, #FF8C1A);
     color: white;
 }
 
@@ -71,7 +71,7 @@
 
 .filePicker {
     border: 0;
-    background-color: hsla(194, 100%, 50%, 1);
+    background-color: var(--paint-looks-secondary-default, #FF8C1A);
     border-radius: 4px;
     font-weight: 600;
     color: white;

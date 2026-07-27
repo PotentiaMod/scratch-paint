@@ -43,8 +43,12 @@ Edited to add input-range-small
     border-color: rgba(255, 255, 255, 0.15);
 }
 
+.input-form:hover {
+    border-color: $looks-secondary;
+}
+
 .input-form:focus {
-    border-color: $motion-primary;
+    border-color: $looks-secondary;
     box-shadow: 0 0 0 $grid-unit $motion-transparent;
 }
 [theme="dark"] .input-form:hover {
