@@ -19,3 +19,4 @@ dist/*
 
 # tests
 /test/results/*
+node_modules/.cache/ git add .gitignore git commit -m Ignore node_modules cache (prevent gh-pages cache from being tracked)
