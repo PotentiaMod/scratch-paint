@@ -204,6 +204,10 @@ class PaintEditor extends React.Component {
                 /* falls through */
             case Modes.SUSSY:
                 /* falls through */
+			case Modes.ICON:
+                // There is no bitmap equivalent of the icon tool.
+                this.props.changeMode(Modes.BIT_SELECT);
+                break;
             case Modes.RECT:
                 this.props.changeMode(Modes.BIT_RECT);
                 break;

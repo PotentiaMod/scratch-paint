@@ -3,10 +3,12 @@ const CLOSE_MODAL = 'scratch-paint/modals/CLOSE_MODAL';
 
 const MODAL_FILL_COLOR = 'fillColor';
 const MODAL_STROKE_COLOR = 'strokeColor';
+const MODAL_ICON_PICKER = 'iconPicker';
 
 const initialState = {
     [MODAL_FILL_COLOR]: false,
-    [MODAL_STROKE_COLOR]: false
+    [MODAL_STROKE_COLOR]: false,
+    [MODAL_ICON_PICKER]: false
 };
 
 const reducer = function (state, action) {
@@ -57,10 +59,21 @@ const closeStrokeColor = function () {
     return closeModal(MODAL_STROKE_COLOR);
 };
 
+const openIconPicker = function () {
+    return openModal(MODAL_ICON_PICKER);
+};
+
+const closeIconPicker = function () {
+    return closeModal(MODAL_ICON_PICKER);
+};
+
+
 export {
     reducer as default,
     openFillColor,
     openStrokeColor,
+    openIconPicker,
     closeFillColor,
-    closeStrokeColor
+    closeStrokeColor,
+    closeIconPicker
 };

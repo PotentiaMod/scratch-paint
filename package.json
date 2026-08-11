@@ -24,6 +24,10 @@
     "url": "git+ssh://git@github.com/LLK/scratch-paint.git"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/free-regular-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
     "@turbowarp/paper": "^0.12.202407262155",
     "classnames": "2.2.5",
     "cross-env": "^10.1.0",

@@ -56,6 +56,11 @@ const messages = defineMessages({
         description: 'Label for the shape tool',
         id: 'paint.shapeMode.shape'
     },
+	icon: {
+        defaultMessage: 'Icon',
+        description: 'Label for the tool that lets you pick a FontAwesome icon and draw it onto the canvas',
+        id: 'paint.iconMode.icon'
+    },
     dragon: {
         defaultMessage: 'Dragon',
         description: 'Label for the totally a normal dragon head drawer dragon drawing tool',

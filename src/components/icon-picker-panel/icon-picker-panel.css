@@ -1,0 +1,134 @@
+@import '../../css/colors.css';
+@import "../../css/units.css";
+
+.icon-picker-panel {
+    position: absolute;
+    top: 0;
+    left: calc(100% + calc(2 * $grid-unit));
+    z-index: 250;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    max-height: 30rem;
+    background: $input-background;
+    border: 1px solid $form-border;
+    border-radius: .5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
+    overflow: hidden;
+}
+
+.search-input {
+    flex-shrink: 0;
+    margin: calc(2 * $grid-unit);
+    padding: calc(1.5 * $grid-unit) calc(2 * $grid-unit);
+    border: 1px solid $form-border;
+    border-radius: .25rem;
+    background: $input-background;
+    color: $text-primary;
+    font-size: .8rem;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: $looks-secondary;
+}
+
+.icon-scroll-area {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0 calc(2 * $grid-unit) calc(2 * $grid-unit);
+}
+
+.icon-group + .icon-group {
+    margin-top: calc(2 * $grid-unit);
+}
+
+.icon-group-header {
+    position: sticky;
+    top: 0;
+    padding: calc(1 * $grid-unit) 0;
+    background: white;
+    color: $text-primary;
+    font-size: .7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-bottom: 1px dashed $ui-pane-border;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+    gap: calc(1 * $grid-unit);
+    margin-top: calc(1 * $grid-unit);
+}
+
+.icon-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(.5 * $grid-unit);
+    border: none;
+    border-radius: .25rem;
+    background: none;
+    padding: calc(1 * $grid-unit);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.icon-tile:hover {
+    background-color: $form-border;
+}
+
+.icon-tile.is-selected {
+    background-color: $looks-secondary;
+}
+
+.icon-glyph {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $text-primary;
+}
+
+.icon-tile.is-selected .icon-glyph {
+    fill: white;
+}
+
+.icon-label {
+    width: 100%;
+    overflow: hidden;
+    color: $text-primary;
+    font-size: .55rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon-tile.is-selected .icon-label {
+    color: white;
+}
+
+.icon-group-more {
+    margin-top: calc(1 * $grid-unit);
+    color: $text-primary;
+    font-size: .65rem;
+    font-style: italic;
+    opacity: .7;
+}
+
+.no-results {
+    padding: calc(4 * $grid-unit) calc(2 * $grid-unit);
+    color: $text-primary;
+    font-size: .8rem;
+    text-align: center;
+    opacity: .7;
+}
+
+.icon-picker-hint {
+    flex-shrink: 0;
+    padding: calc(1.5 * $grid-unit) calc(2 * $grid-unit);
+    border-top: 1px dashed $ui-pane-border;
+    color: $text-primary;
+    font-size: .65rem;
+    opacity: .8;
+}
