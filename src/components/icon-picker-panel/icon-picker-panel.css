@@ -10,7 +10,7 @@
     flex-direction: column;
     width: 22rem;
     max-height: 30rem;
-    background: $input-background;
+    background: $popover-background;
     border: 1px solid $form-border;
     border-radius: .5rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
@@ -47,7 +47,7 @@
     position: sticky;
     top: 0;
     padding: calc(1 * $grid-unit) 0;
-    background: white;
+    background: $popover-background;
     color: $text-primary;
     font-size: .7rem;
     font-weight: bold;
