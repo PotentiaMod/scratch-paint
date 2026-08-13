@@ -27,7 +27,7 @@ import LineMode from '../../containers/line-mode.jsx';
 import Loupe from '../loupe/loupe.jsx';
 import FixedToolsContainer from '../../containers/fixed-tools.jsx';
 import IconMode from '../../containers/icon-mode.jsx';
-import IconPickerPanel from '../../containers/icon-picker-panel.jsx';
+import IconPickerPanel from '../../containers/icon-picker-panel.jsx'; ///ugh
 import ModeToolsContainer from '../../containers/mode-tools.jsx';
 import OvalMode from '../../containers/oval-mode.jsx';
 import PenMode from '../../containers/pen-mode.jsx';
