@@ -34,6 +34,7 @@
     "keymirror": "0.1.1",
     "lodash.bindall": "4.4.0",
     "lodash.omit": "4.5.0",
+    "lucide-react": "^1.73.0",
     "minilog": "3.1.0",
     "opentype.js": "1.3.4",
     "parse-color": "1.0.0",
