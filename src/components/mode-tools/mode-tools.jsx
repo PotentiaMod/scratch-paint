@@ -406,11 +406,11 @@ const ModeToolsComponent = props => {
                                         }
                                         onClick={() => props.onBrushChange("CIRCLE")}
                                     >
-                                        <img
+                                        <TWRenderRecoloredImage
                                             alt={props.intl.formatMessage(messages.brushCircle)}
                                             className={styles.buttonGroupButtonIcon}
                                             draggable={false}
-                                            src={"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCBmaWxsPSIjMDBjM2ZmIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHJ4PSIxMDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuNSAyLjUpIi8+PC9zdmc+"}
+                                            src={brushCircleIcon}
                                         />
                                     </Button>
                                     <Button
@@ -419,11 +419,11 @@ const ModeToolsComponent = props => {
                                         }
                                         onClick={() => props.onBrushChange("SQUARE")}
                                     >
-                                        <img
+                                        <TWRenderRecoloredImage
                                             alt={props.intl.formatMessage(messages.brushSquare)}
                                             className={styles.buttonGroupButtonIcon}
                                             draggable={false}
-                                            src={"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCBmaWxsPSIjMDBjM2ZmIiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHJ4PSIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjUgMi41KSIvPjwvc3ZnPg=="}
+                                            src={brushSquareIcon}
                                         />
                                     </Button>
                                 </ButtonGroup>
